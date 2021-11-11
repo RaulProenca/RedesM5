@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        "use strict";
+        //Isto é um comentário de linha
+        /*
+            Isto é um comentário de bloco
+        */
+        document.write("Olá mundo!!");
+        var a = 20;
+        document.write("<br>", a + a, "!!!");
+        document.write("<br>", typeof (a));
+        a = "AERP";
+        document.write("<br>", typeof (a));
+        a = true;
+        document.write("<br>", typeof (a));
+
+        /* alert("Esta é uma caixa de alerta!!");
+        var nome = prompt("Qual é o seu nome?");
+        document.write("<br>", nome);
+
+        //Estruturas de decisão
+        if (confirm('Amanhã há aulas?')) {
+            console.log('Resposta correta');
+        } else {
+            console.log('Resposta errada');
+        } */
+
+        document.write("<br>");
+        var val = Math.floor(Math.random() * 99 + 1);
+        document.write(val);
+        switch (true) {
+            case (val >= 0 && val <= 3):
+                document.write("Bebé");
+                break;
+            case (val >= 4 && val <= 11):
+                document.write("Criança");
+                break;
+            case (val >= 12 && val <= 17):
+                document.write("Adolescente");
+                break;
+            case (val >= 18 && val <= 64):
+                document.write("Adulto");
+                break;
+            case (val >= 65 && val <= 99):
+                document.write("Idoso");
+                break;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
