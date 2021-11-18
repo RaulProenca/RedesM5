@@ -41,6 +41,8 @@
         document.write("<br>");
         var val = Math.floor(Math.random() * 99 + 1);
         document.write(val);
+
+        //Estrutura de decisão - Switch 
         switch (true) {
             case (val >= 0 && val <= 3):
                 document.write("Bebé");
@@ -59,7 +61,50 @@
                 break;
         }
 
+        //Estruturas de repetição
+        var numeros = [1, 2, 3, 4, 5];
+        for (let i = 0; i < numeros.length; i++) {
+            document.write("<br>", numeros[i]);
+        }
 
+        //Gerar um array de números aleatórios 
+        //com 40 números
+        numeros = Array.from({ length: 40 }, () =>
+            Math.floor(Math.random() * 40));
+
+        //forEach    
+        numeros.forEach(value => {
+            if (value % 5 == 0) {
+                document.write("<br>", value);
+            }
+        });
+
+        //doWhile
+
+        document.write("<br>");
+        do {
+            var aleatorio =
+                Math.floor(Math.random() * 50);
+            document.write("*");
+        } while (aleatorio != 25);
+
+        document.write("<br>");
+        //while
+        var j = 1;
+        while (j <= 20) {
+            for (let i = 1; i <= j; i++) {
+                document.write(i);
+            }
+            document.write("<br>");
+            j++;
+        }
+
+        //if inline
+        document.write("<br>");
+        var idade =
+            Math.floor(Math.random() * 99 + 1);
+        var maiorIdade = idade >= 18 ? true : false;
+        document.write(maiorIdade);
     </script>
 
 </body>

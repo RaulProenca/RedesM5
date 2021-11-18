@@ -23,12 +23,77 @@
         document.write("<br>" + a + " "
             + typeof (a));
 
-        //Caixa de Alerta    
+        /*//Caixa de Alerta    
         alert("Isto é uma caixa de alerta!!");
         //Prompt
         var nome = prompt("Qual é o teu nome?");
         document.write("<br>O teu nome é: " + nome);
 
+        //Estruturas condicionais
+        if (confirm("Hoje está sol?")) {
+            document.write("<br>Que calor!!");
+        } else {
+            document.write("<br>Que frio!!");
+        } */
+
+        document.write("<br>");
+        var idade = Math.floor(Math.random() * 99);
+        //If inline
+        var maiorIdade = idade >= 18 ? "Adulto" : "Menor";
+
+        //Switch
+        switch (true) {
+            case (idade >= 0 && idade <= 3):
+                document.write(idade, " Bebé");
+                break;
+            case (idade >= 4 && idade <= 11):
+                document.write(idade, " Criança");
+                break;
+            case (idade >= 12 && idade <= 17):
+                document.write(idade, " Adolescente");
+                break;
+            case (idade >= 18 && idade <= 64):
+                document.write(idade, " Adulto");
+                break;
+            case (idade >= 65 && idade <= 99):
+            case (idade >= 0 && idade <= 3):
+                document.write(idade, " Bebé");
+                break; (idade, " Idoso");
+                break;
+        }
+
+
+        //Estruturas de repetição
+        var numeros = [1, 2, 3, 4];
+        for (let i = 0; i < numeros.length; i++) {
+            document.write("<br>", numeros[i]);
+        }
+
+        numeros = Array.from({ length: 100 }, () =>
+            Math.floor(Math.random() * 100));
+
+        document.write("<br>");
+        numeros.forEach(value => {
+            document.write(" ", value);
+        });
+
+        //dowhile
+        document.write("<br>");
+        do {
+            var i = Math.floor(Math.random() * 50);
+            document.write("*");
+        } while (i != 25);
+
+        //while
+        document.write("<br>");
+        var num = 1;
+        while (num <= 20) {
+            for (let i = 1; i <= num; i++) {
+                document.write(i);
+            }
+            document.write("<br>");
+            num++;
+        }
 
     </script>
 

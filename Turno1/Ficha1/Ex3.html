@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function euromilhoes(nums, quant) {
+            var estrelas = new Array();
+            var numero;
+            while (estrelas.length < quant) {
+                numero = Math.floor(Math.random() * nums + 1);
+                if (!estrelas.includes(numero)) {
+                    estrelas.push(numero);
+                }
+            }
+            document.write(estrelas);
+        }
+        euromilhoes(50, 5);
+        document.write("<br>");
+        euromilhoes(12, 2);
+    </script>
+</body>
+
+</html>
