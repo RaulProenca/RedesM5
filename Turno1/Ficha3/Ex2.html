@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-3">
+            <label for="selectDisc" 
+            class="col-sm-5 col-form-label">
+            Disciplinas</label>
+            <label for="selectDiscSel" 
+            class="col-sm-5 col-form-label">
+            Disciplinas Selecionadas</label>
+        </div>
+        <div class="row my-3">
+            <div class="col-sm-3">
+                <select name="selectDisc" id="selectDisc" 
+                class="form-select" multiple>
+                    <option value="PT">Português</option>
+                    <option value="MT">Matemática</option>
+                    <option value="IG">Inglês</option>
+                    <option value="IF">Informática</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <input type="button" value="Adicionar" class="btn btn-primary" id="btnAdd" onclick="adicionar()">
+                <input type="button" value=" Remover" class="btn btn-danger" id="btnRemove" onclick="remover()">
+            </div>
+            <div class="col-sm-3">
+                <select name="selectDiscSel" id="selectDiscSel" 
+                class="form-select" multiple>
+
+                </select>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

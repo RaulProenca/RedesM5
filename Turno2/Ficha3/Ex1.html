@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-2">
+            <label for="txtValor1" class="col-sm-1 col-form-label">
+                Valor1:
+            </label>
+            <div class="col-sm-2">
+                <input type="text" 
+                       name="txtValor1" 
+                       id="txtValor1"
+                       class="form-control">
+            </div>
+            <label for="txtValor2" class="col-sm-1 col-form-label">
+                Valor2: 
+            </label>
+            <div class="col-sm-2">
+                <input type="text" 
+                        name="txtValor2" 
+                        id="txtValor2"
+                        class="form-control">
+            </div>
+            <div class="col-sm-2">
+                <input type="button" 
+                       class="btn btn-primary" 
+                       value="Calcular"
+                       onclick="calcular()">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <label for="txtTotal" class="col-sm-1 col-form-label">
+                Total: 
+            </label>
+            <div class="col-sm-2">
+                <input type="text" 
+                        name="txtTotal" 
+                        id="txtTotal"
+                        class="form-control">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
